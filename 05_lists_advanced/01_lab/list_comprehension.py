@@ -23,3 +23,11 @@ nums = [1, 2, 3, 4]
 result = [num ** 2 if num % 2 == 0 else num ** 3 for num in nums]
 print(result)
 
+#######################################
+
+a = [1, 2, 3, 4, 5]
+b = [6, 7, 8, 9, 10]
+
+print([num for num in b])
+print([num for num in b if num % 2 == 0])
+print([num if num % 2 == 0 else num ** 2 for num in b]) # if we have if-else, the order is different
