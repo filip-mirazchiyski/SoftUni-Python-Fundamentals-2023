@@ -20,11 +20,12 @@ def view_contacts():
 
 
 def search_contact():
-    name == input("Enter the name to search for: ")
+    name = input("Enter the name to search for: ")
+    
     if name in address_book:
         details = address_book[name]
         print(f"Name {name}")
-        print(f"Phone {details[phone]}")
+        print(f"Phone {details['Phone']}")
         print(f"Address: {details['Address']}")
     else:
         print(f"Contact {name} not found in the address book")
