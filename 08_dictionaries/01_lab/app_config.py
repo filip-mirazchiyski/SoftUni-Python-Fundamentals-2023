@@ -18,3 +18,10 @@ for k, v in app_configuration.items():
 print()
 if "database_host" in app_configuration.keys():
     print("Database host is a key in the dictionary")
+
+superuser = app_configuration.setdefault("superuser", "mario123")
+print(app_configuration)
+
+other_dictionary = {"superuser": "filip123"}
+app_configuration.update(other_dictionary)
+print(app_configuration)
